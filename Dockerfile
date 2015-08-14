@@ -1,5 +1,6 @@
-FROM node:latest
-MAINTAINER Christian Lück <christian@lueck.tv>
+FROM mhart/alpine-node
+
+MAINTAINER Stephen Coe <stephen@madebybox.co.uk>
 
 RUN npm install -g json-server
 
@@ -8,5 +9,5 @@ VOLUME /data
 
 EXPOSE 80
 ADD run.sh /run.sh
-ENTRYPOINT ["bash", "/run.sh"]
+ENTRYPOINT ["sh", "/run.sh"]
 CMD []

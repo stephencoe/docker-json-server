@@ -1,5 +1,7 @@
 # docker-json-server
 
+## Updated to use alpine linux. image size is now 42.56 MB opposed to 651.7 MB
+
 [JSON Server](https://github.com/typicode/json-server) provides REST API mocking based on plain JSON.
 This is a [docker](https://www.docker.io) image that eases setup.
 
